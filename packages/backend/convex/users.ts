@@ -4,7 +4,7 @@ export const getMany = query({
     args:{},
     handler: async (ctx) => {
         const users = await ctx.db.query("users").collect();
-
+        // basic code from convex docs
         return users
     },
 });
