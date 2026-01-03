@@ -33,3 +33,5 @@ export default function RootLayout({
     </html>
   )
 }
+// remove the auth guard from the layout and put it in
+// (dashboard)/layout.tsx 
