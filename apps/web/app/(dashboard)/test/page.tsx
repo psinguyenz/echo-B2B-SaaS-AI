@@ -1,9 +1,9 @@
 const Page = () => {
     return (
         <div>
-            Test page!
+            <p>Only authenticated users can see this page</p>
         </div>
     );
-}
+};
 
 export default Page;
