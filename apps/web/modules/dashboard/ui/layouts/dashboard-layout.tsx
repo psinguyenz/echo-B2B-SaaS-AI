@@ -6,7 +6,7 @@ import { cookies } from "next/headers";
 
 export const DashboardLayout = async ({children} : {children: React.ReactNode}) => {
     const cookieStore = await cookies();
-    const defaultOpen = cookieStore.get("sidebar_state")?.value === "true";
+    const defaultOpen = cookieStore.get("sidebar-state")?.value === "true"; // "SIDEBAR_COOKIE_NAME" by the suggestion of coderabbit was unloadable in turborepo
     // during server side rendering we know whether sidebar is collapse or not using sidebar_state
     
     return (
