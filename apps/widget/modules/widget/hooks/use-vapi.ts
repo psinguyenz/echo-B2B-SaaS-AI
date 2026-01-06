@@ -15,7 +15,7 @@ export const useVapi = () => {
     // Phan nay giong khai bao bien trong python, voi 2 bien cuoi la dang array
 
     useEffect(() => {
-        const vapiInstance = new Vapi("8a3694f7-0097-44c3-b84b-614bad29e329");
+        const vapiInstance = new Vapi("");
         // only for testing the Vapi API, otherwise customers will provide their own API keys
 
         setVapi(vapiInstance);
@@ -69,7 +69,7 @@ export const useVapi = () => {
 
         if (vapi) {
             // Only for testing the Vapi API, otherwise customers will provide their own Assistant IDs
-            vapi.start("21a281c8-ef5b-4e37-98d8-86086794a143"); // id of Tom
+            vapi.start(""); // id of Tom
             // if vapi exist
         }
     }
